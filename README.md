@@ -33,3 +33,8 @@ The repository includes the following functions:
 2. flattenList(list): In base R, there is a function called [unlist](https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlist.html) that has the same functionality.
 
 3. findprime(list): There is no function that find the largest prime within a list, but there is similar function in R environment, such as [isprime](https://www.rdocumentation.org/packages/gmp/versions/0.5-13.2/topics/isprime), that test if a number is a prime or not.
+
+## Dependencies
+
+- R (≥ 3.0.2)
+- testthat (≥ 2.0.1)
