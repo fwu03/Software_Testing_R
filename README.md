@@ -4,14 +4,14 @@
 
 |Name|Github.com User Id|
 |--|--|
-|Bailey Lei|[blei7](https://github.com/blei7)|
-|Daniel Lin|[danielglin](https://github.com/danielglin)|
-|Fan Wu|[fwu03](https://github.com/fwu03)|
+|Bailey Lei (baileyle)|[blei7](https://github.com/blei7)|
+|Daniel Lin (dglin)|[danielglin](https://github.com/danielglin)|
+|Fan Wu (fwu03)|[fwu03](https://github.com/fwu03)|
 
 ## Versions
 | Document | Description |
 |-|-|
-| [Milestone 1](../master/Proposal.md) | Project Proposal |
+| [Milestone 1](../master/README.md) | Project Proposal |
 
 ## Package Overview
 
