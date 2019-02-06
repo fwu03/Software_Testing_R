@@ -7,8 +7,8 @@ binarysearch <- function(x, list){
   #
   # Argument:
   #
-  #     x: numeric, character
-  #     list: sorted list of numerics, sorted list of characters
+  #     x: numeric
+  #     list: sorted list of numerics
   #
   # Return:
   #
@@ -21,12 +21,6 @@ binarysearch <- function(x, list){
   #
   # binarysearch(5, c(10,100,1000,1000))
   # > FALSE
-  #
-  # binarysearch('apple', c('apple', 'banana', 'pineapple'))
-  # > TRUE
-  #
-  # binarysearch('', c('apple', 'banana', 'pineapple'))
-  # > FALSE
   
   return(NULL)
 }
@@ -37,8 +31,8 @@ testbinarysearch <- function(x){
   #
   # Argument:
   #
-  #     x: numeric, character
-  #     list: sorted list of numerics, sorted list of characters
+  #     x: numeric
+  #     list: sorted list of numerics
   #
   # Return:
   #
@@ -52,8 +46,6 @@ testbinarysearch <- function(x){
   test_that('Inconsistent results', {
     expect_equal(binarysearch(4, c(1,2,3,4,5,6)), TRUE)
     expect_equal(binarysearch(5, c(10,100,1000,1000)), FALSE)
-    expect_equal(binarysearch('apple', c('apple', 'banana', 'pineapple')), TRUE)
-    expect_equal(binarysearch('', c('apple', 'banana', 'pineapple')), FALSE)
   })
 }
 
