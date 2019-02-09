@@ -1,0 +1,11 @@
+Package: mlist
+Title: mlist
+Version: 0.1
+Date: 2019-02-05
+Authors@R: c(person("Bailey", "Lei", email = "email@email.net", role = c("aut", "cre")), 
+  person("Daniel", "Lin", email = "email@email.net", role = c("aut")), 
+  person("Fan", "Wu", email = "email@email.net", role = c("aut")))
+Description: List Tools.
+License: MIT
+Suggests: 
+    testthat
