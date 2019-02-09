@@ -5,7 +5,7 @@
 test_that('Test the correctness of input data types',{
 
   incorrect_list <- list("4", "1", "2")
-  incorrect_vector <- c(1,4,"hello")
+  incorrect_vector <- list(1,4,"hello")
 
   expect_error(flatten_list_prime(incorrect_list)) #expect error for incorrect data type within list
   expect_error(flatten_list_prime(incorrect_vector)) #expect error for incorrect data type within vector
