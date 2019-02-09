@@ -23,16 +23,17 @@ The repository includes the following functions:
 
 |ID|Function|Description|
 |--|--|--|
-|1|binarysearch(x, list)|Search if the value `x` exists in the `list`, and return `TRUE/FALSE` depends on whether the `x` value has been found.|
-|2|flattenlist(list)|This function takes an input list and returns a flat list that has all the elements.  For example, the list `list(c(1, 2), c(3, 4))` would be flattened to the list `list(1, 2, 3, 4)`.|
-|3|findprime(list)| Return the largest prime number for a given list.|
+|1|binary_search(x, list)|Search if the value `x` exists in the `list`, and return a list contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position indice in `list`|
+|2|flatten_list(list)|This function takes an input list and returns a flat list that has all the elements.  For example, the list `list(c(1, 2), c(3, 4))` would be flattened to the list `list(1, 2, 3, 4)`.|
+|3|find_prime(list)| Return the largest prime number for a given list.|
 
 ## R Environment
 
-1. binarysearch(x, list): In the R environment, there is another package has the similar functionality called, [findintervals](https://www.rdocumentation.org/packages/pracma/versions/1.9.9/topics/findintervals). This function contains two inputs: a numeric value `x` and a numeric vector `xs`, and it finds the indices `i` in `xs` such that either x=xs[i] or `xs[i] or xs[i]>x>xs[i+1]`.
-2. flattenList(list): In base R, there is a function called [unlist](https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlist.html) that has the same functionality.
+1. binary_search(x, list): In the R environment, there are two functions have the similar functionality as binary_search. The first one is [findintervals](https://www.rdocumentation.org/packages/pracma/versions/1.9.9/topics/findintervals), which returns the position indice of a numeric value in a numeric vector. Another one is the operator `%in%` which is used to identify if an element belongs to a vector. Comparing with them, the binary_search function is able to return a list contains whether `x` is in the `list`, `x` value, `x` position indice in `list`.
 
-3. findprime(list): There is no function that find the largest prime within a list, but there is similar function in R environment, such as [isprime](https://www.rdocumentation.org/packages/gmp/versions/0.5-13.2/topics/isprime), that test if a number is a prime or not.
+2. flatten_list(list): In base R, there is a function called [unlist](https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlist.html) that has the same functionality.
+
+3. find_prime(list): There is no function that find the largest prime within a list, but there is similar function in R environment, such as [isprime](https://www.rdocumentation.org/packages/gmp/versions/0.5-13.2/topics/isprime), that test if a number is a prime or not.
 
 ## Dependencies
 
