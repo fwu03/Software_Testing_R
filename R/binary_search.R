@@ -1,11 +1,9 @@
-# load libraries
-suppressPackageStartupMessages(library(testthat))
 
 binary_search <- function(x, list){
-  # Usage: The function applies the generic binary search algorithm to search if the value 
+  # Usage: The function applies the generic binary search algorithm to search if the value
   # x exists in the list, and returns a list contains: TRUE/FAlSE depends on whether the x value has been found,
   # x value, and x position indice in list
-  
+
   # Argument:
   #
   #     x: numeric
@@ -25,6 +23,6 @@ binary_search <- function(x, list){
   #
   # binary_search(5, list(10,100,1000,1000))
   # > list(FALSE,5,0)
-  
+
   return(NULL)
 }
