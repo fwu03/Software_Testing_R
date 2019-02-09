@@ -23,13 +23,13 @@ The repository includes the following functions:
 
 |ID|Function|Description|
 |--|--|--|
-|1|binary_search(x, list)|Search if the value `x` exists in the `list`, and return a list contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position indice in `list`|
+|1|binary_search(x, list)|Search if the value `x` exists in the `list`, and return a list contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position indices in `list`|
 |2|flatten_list_prime(list)|This function takes an input list or vector and returns a flat list that contains only prime numbers.  For example, the list `list(c(1, 2), c(3, 4))` would be flattened to the list `list(3)`.|
 |3|find_prime(list)| Return the largest prime number for a given list or vector.|
 
 ## R Environment
 
-1. binary_search(x, list): In the R environment, there are two functions have the similar functionality as binary_search. The first one is [findintervals](https://www.rdocumentation.org/packages/pracma/versions/1.9.9/topics/findintervals), which returns the position indice of a numeric value in a numeric vector. Another one is the operator `%in%` which is used to identify if an element belongs to a vector. Comparing with them, the binary_search function is able to return a list contains whether `x` is in the `list`, `x` value, `x` position indice in `list`.
+1. binary_search(x, list): In the R environment, there are two functions have the similar functionality as binary_search. The first one is [findintervals](https://www.rdocumentation.org/packages/pracma/versions/1.9.9/topics/findintervals), which returns the position indices of a numeric value in a numeric vector. Another one is the operator `%in%` which is used to identify if an element belongs to a vector. Comparing with them, the binary_search function is able to return a list contains whether `x` is in the `list`, `x` value, `x` position indices in `list`.
 
 2. flatten_list_prime(list): In base R, there is a function called [unlist](https://stat.ethz.ch/R-manual/R-devel/library/base/html/unlist.html) that has the same functionality.
 
