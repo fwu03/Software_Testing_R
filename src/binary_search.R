@@ -3,8 +3,9 @@ suppressPackageStartupMessages(library(testthat))
 
 binary_search <- function(x, list){
   # Usage: The function applies the generic binary search algorithm to search if the value 
-  # x exists in the list, and returns TRUE/FAlSE depends on whether the x value has been found.
-  #
+  # x exists in the list, and returns a list contains: TRUE/FAlSE depends on whether the x value has been found,
+  # x value, and x position indice in list
+  
   # Argument:
   #
   #     x: numeric
@@ -12,41 +13,18 @@ binary_search <- function(x, list){
   #
   # Return:
   #
-  #     a logical value (TRUE/FALSE) 
+  #     a list contains:
+  #       - first element is a logical value (TRUE/FALSE)
+  #       - second element is a numeric value of x
+  #       - third element is a numeric in range of 0 to length(list) where 0 indicates the element is not in the list
   #
   # Examples:
   #
-  # binary_search(4, c(1,2,3,4,5,6))
-  # > TRUE
+  # binary_search(4, list(1,2,3,4,5,6))
+  # > list(TRUE,4,4)
   #
-  # binary_search(5, c(10,100,1000,1000))
-  # > FALSE
+  # binary_search(5, list(10,100,1000,1000))
+  # > list(FALSE,5,0)
   
   return(NULL)
 }
-
-test_binary_search <- function(x){
-  # Usage: The function applies the generic binary search algorithm to search if the value 
-  # x exists in the list, and returns TRUE/FAlSE depends on whether the x value has been found.
-  #
-  # Argument:
-  #
-  #     x: numeric
-  #     list: sorted list of numerics
-  #
-  # Return:
-  #
-  #     a logical value (TRUE/FALSE) 
-  #
-  # Examples:
-  #
-  # test_binary_search()
-  # > Success
-  
-  test_that('Inconsistent results', {
-    expect_equal(binary_search(4, c(1,2,3,4,5,6)), TRUE)
-    expect_equal(binary_search(5, c(10,100,1000,1000)), FALSE)
-  })
-}
-
-
