@@ -1,7 +1,7 @@
 # load libraries
 suppressPackageStartupMessages(library(testthat))
 
-binarysearch <- function(x, list){
+binary_search <- function(x, list){
   # Usage: The function applies the generic binary search algorithm to search if the value 
   # x exists in the list, and returns TRUE/FAlSE depends on whether the x value has been found.
   #
@@ -16,16 +16,16 @@ binarysearch <- function(x, list){
   #
   # Examples:
   #
-  # binarysearch(4, c(1,2,3,4,5,6))
+  # binary_search(4, c(1,2,3,4,5,6))
   # > TRUE
   #
-  # binarysearch(5, c(10,100,1000,1000))
+  # binary_search(5, c(10,100,1000,1000))
   # > FALSE
   
   return(NULL)
 }
 
-testbinarysearch <- function(x){
+test_binary_search <- function(x){
   # Usage: The function applies the generic binary search algorithm to search if the value 
   # x exists in the list, and returns TRUE/FAlSE depends on whether the x value has been found.
   #
@@ -40,12 +40,12 @@ testbinarysearch <- function(x){
   #
   # Examples:
   #
-  # testbinarysearch()
+  # test_binary_search()
   # > Success
   
   test_that('Inconsistent results', {
-    expect_equal(binarysearch(4, c(1,2,3,4,5,6)), TRUE)
-    expect_equal(binarysearch(5, c(10,100,1000,1000)), FALSE)
+    expect_equal(binary_search(4, c(1,2,3,4,5,6)), TRUE)
+    expect_equal(binary_search(5, c(10,100,1000,1000)), FALSE)
   })
 }
 
