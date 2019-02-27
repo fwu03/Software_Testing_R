@@ -22,11 +22,11 @@ test_that('test the correctness of the function outputs', {
 
 
   double_col_df <- data.frame(c(1,2,3), c(4,5,6))
-  primes <- c(3,5)
+  primes <- c(2, 3,5)
 
   expect_equal(flatten_dataframe_prime(double_col_df), primes) #expect TRUE when nested list are flatten
-  expect_true(flatten_dataframe_prime(double_col_df) <= length(primes)) #expect True since length of flatten cannot be smaller than nested
-  expect_true(typeof(flatten_dataframe_prime(nested)) == "double") #expect True since function suppose to return a list
+  expect_true(length(flatten_dataframe_prime(double_col_df)) <= length(primes)) #expect True since length of flatten cannot be smaller than nested
+  expect_true(typeof(flatten_dataframe_prime(double_col_df)) == "double") #expect True since function suppose to return a list
 })
 
 # test values of elements within inputs to be less than 1000
