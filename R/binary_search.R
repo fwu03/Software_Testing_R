@@ -47,10 +47,6 @@ binary_search <- function(x, lst){
   # Binary Search Algorithm
   # ---------------------------
   
-  # Empty list
-  if (length(lst) == 0){
-    return(c('FALSE',x,NA))}
-  
   low <- 1
   high <- length(lst)
   
@@ -65,3 +61,4 @@ binary_search <- function(x, lst){
   }
   return(c('FALSE',x,NA))
 }
+

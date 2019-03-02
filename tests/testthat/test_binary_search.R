@@ -7,40 +7,35 @@ library(mlist)
 
 context("binary search")
 
-
-# test when the inputs have incorrect data type
-test_that('Test the correctness of input data types',{
-  correct_num_x <- 5
-  incorrect_num_x <- "5"
-
-  correct_lst <- c(1,2,3,4,5)
-  incorrect_lst <- c('a','f','e')
-  
-  expect_error(binary_search(incorrect_num_x, correct_list)) #expect error for incorrect data type of x
-  expect_error(binary_search(correct_num_x, incorrect_list)) #expect error for incorrect data type of lst
+# Input Tests
+test_that("Input x is not a numeric", {
+  expect_error(binary_search('5', c(1,2,3,4,5)))
+  expect_error(binary_search(list(1,2), c(1,2,3,4,5)))
 })
 
-# test when the inputs have incorrect data value
-test_that('Test the correctness of input data values',{
-  correct_num_x <- 5
-  incorrect_num_x <- 5000
-  
-  correct_lst <- c(1,2,3,4,5)
-  incorrect_lst <- c(1,2000,3,4,5)
-  
-  expect_error(binary_search(incorrect_num_x, correct_list)) #expect error for x greater than 1000
-  expect_error(binary_search(correct_num_x, incorrect_list)) #expect error for lst contains value greater than 1000
+test_that("Input x should be lower than 1000", {
+  expect_error(binary_search(5000, c(1,2,3,4,5)))
 })
 
-# test the correctness of the function output
+
+test_that("Input lst must contain only numerics", {
+  expect_error(binary_search(5, c('a','f','e')))
+})
+
+test_that("Input lst contains values exceed 1000", {
+  expect_error(binary_search(5, c(1,2000,3,4,5)))
+})
+
+test_that("Input lst is not sorted", {
+  expect_error(binary_search(5, c(5,4,20,3,10)))
+})
+
+
+# Output Tests
 test_that('Test the correctness of the function outputs', {
-  x <- 5
-  lst1 <- c(1,2,3,4,5,6)
-  lst2 <- c(1,2,3)
-
-  expect_equal(binary_search(x, lst1), c('TRUE','5','5')) #expect TRUE if x is in the lst with its value and position
-  expect_equal(binary_search(x, lst2), c('FALSE','5',NA)) #expect FALSE if x is not in the lst and NA for position
-  expect_equal(is.vector(binary_search(x, lst1)), TRUE) #expect the output should be vector
-  expect_equal(length(binary_search(x, lst1)), 3) #expect the output should have length 3
+  expect_equal(binary_search(5, c(1,2,3,4,5,6)), c('TRUE','5','5'))
+  expect_equal(binary_search(5, c(1,2,3)), c('FALSE','5',NA))
+  expect_equal(binary_search(5, c(6,7,8)), c('FALSE','5',NA))
 })
+
 
