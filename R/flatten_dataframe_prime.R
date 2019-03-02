@@ -30,6 +30,7 @@ flatten_dataframe_prime <- function(df) {
   primes_in_df <- c()
   for (row_ind in 1:nrow(df)) {
     for (col_ind in 1:ncol(df)) {
+      # to make a df w/o cols or rows: data.frame()
       # print(row_ind)
       # print(col_ind)
       # print(df[row_ind, col_ind])
