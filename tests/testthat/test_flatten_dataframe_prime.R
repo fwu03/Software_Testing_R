@@ -35,5 +35,19 @@ test_that('test values of elements within inputs to be less than 1000',{
   incorrect_list_value <- list(list(1,2,3), list(4,5,1000))
   incorrect_list_value2 <- list(list(1,2,3), list(4,5,6550))
 
-  expect_error(flatten_dataframe_prime(incorrect_list_value)) #expect False since max values within list exceed 1000
+  expect_error(flatten_dataframe_prime(incorrect_list_value)) #expect error because input is not a dataframe
+})
+
+# test large/small values
+test_that("test extreme numeric values",{
+  extreme_df <- data.frame(c(-10000), c(0), c(1), c(-28359.34))
+  
+  expect_equal(flatten_dataframe_prime(extreme_df), c())
+})
+
+# test empty dataframe
+test_that("test empty dataframe", {
+  empty_df <- data.frame()
+  
+  expect_error(flatten_dataframe_prime(empty_df))
 })
