@@ -12,7 +12,7 @@ find_prime <- function(x){
   #      an integer
   #
   # Examples:
-  #
+  #i
   # find_prime(c(0,1,2,3,4,5))
   # >5
   #
@@ -26,14 +26,16 @@ find_prime <- function(x){
 
   #check if vector contains at least one element
   if (length(x) == 0) {
-
-  return(print("No prime number in vector"))
+    
+    return(print("No prime number in vector"))
+  }
+  
+  # check input type is vector
+  
+  if (!typeof(x) == "double"){
+    return(print("Input type must be a vector of numeric value"))
   }
 
-  #check if vector contains non-numeric values
-  if (!is.numeric(x)){
-    return(print("input vector must contains only integers"))
-  }
 
   #check if vector contains values less than 1000
   if (max(x)>1000){
@@ -49,7 +51,7 @@ find_prime <- function(x){
     return(max(list_prime))
   } else {
 
-    return(print("No prime number in list"))
+    return(print("No prime number in vector"))
   }
 
 }
