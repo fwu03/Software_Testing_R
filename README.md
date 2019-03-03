@@ -11,14 +11,13 @@
 ## Versions
 | Document | Description |
 |-|-|
-| [Milestone 1](https://github.com/UBC-MDS/mlist_R/releases/tag/v1.0) | Project Proposal |
-| [Milestone 3](https://github.com/UBC-MDS/mlist_R/releases/tag/v2.0) | Milestone 3 |
+
+| [Milestone 1](https://github.com/UBC-MDS/mlist_R/tree/v1.0) | Project Proposal |
+| [Milestone 3](https://github.com/UBC-MDS/mlist_R/tree/v2.0) | Milestone 3 |
 
 ## Package Overview
 
-This project provides several tools to manipulate lists in R.  
-For example, a user search through a list for a certain kind of item
-The repository includes the following functions:
+R provides lots of tools to manipulate vectors. In this package, we will implement several vector manipulating functions, including `binary_search()`, `flatten_list_prime()`, and `find_prime()`.
 
 ## Installation
 
@@ -65,9 +64,15 @@ The result suggest 100% test coverage:
 |2|flatten_dataframe_prime(dataframe)|This function takes an input dataframe of numbers and returns a vector that contains only the prime numbers in that dataframe.|
 |3|find_prime(list)| Return the largest prime number for a given list or vector.|
 
+|ID|Function|Description|Arguments|Example|
+|--|--|--|--|--|
+|1|binary_search(x, lst)|Search if the value `x` exists in the `lst`, and return a vector contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position indices in `lst`.|x: numeric, lst: sorted vector of numerics|binary_search(4, c(1,2,3,4,5,6))|
+|2|flatten_dataframe_prime(dataframe)|This function takes a dataframe contains multiple vectors and returns a flat vector that contains only prime numbers.|dataframe: a dataframe contains multiple vectors of numerics|flatten_dataframe_prime(data.frame(c(2, 3, 4), c(5, 6, 7), c(8, 9, 10)))|
+|3|find_prime(x)| Return the largest prime number for a given list.|x : a vector of numerics|find_prime(c(0,1,2,3,4,5))|
+
 ## R Environment
 
-1. binary_search(x, list): In the R environment, there are two functions have the similar functionality as binary_search. The first one is [findintervals](https://www.rdocumentation.org/packages/pracma/versions/1.9.9/topics/findintervals), which returns the position indices of a numeric value in a numeric vector. Another one is the operator `%in%` which is used to identify if an element belongs to a vector. Comparing with them, the binary_search function is able to return a list contains whether `x` is in the `list`, `x` value, `x` position indices in `list`.
+1. binary_search(x, lst): In the R environment, there are two functions have the similar functionality as binary_search. The first one is [findintervals](https://www.rdocumentation.org/packages/pracma/versions/1.9.9/topics/findintervals), which returns the position indices of a numeric value in a numeric vector. Another one is the operator `%in%` which is used to identify if an element belongs to a vector. Comparing with them, the binary_search function is able to return a list contains whether `x` is in the `list`, `x` value, `x` position indices in `list`.
 
 2. flatten_dataframe_prime(dataframe): There is no function that returns the prime numbers in a dataframe.
 
@@ -77,3 +82,4 @@ The result suggest 100% test coverage:
 
 - R (≥ 3.0.2)
 - testthat (≥ 2.0.1)
+- covr
