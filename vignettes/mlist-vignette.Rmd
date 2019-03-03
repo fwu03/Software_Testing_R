@@ -43,7 +43,7 @@ The numbers must be less than or equal to 1,000.
 __Output__: a vector of all the prime numbers in the dataframe
 The output vector is sorted ascendingly, and duplicate prime numbers are removed.
 
-__Example__: a <- data.frame(c(2, 3, 4), c(5, 6, 7), c(8, 9, 10))
+__Example__:  flatten_dataframe_prime(data.frame(c(2, 3, 4), c(5, 6, 7), c(8, 9, 10)))
  > c(2, 3, 5, 7)
 
 ## find_prime()
