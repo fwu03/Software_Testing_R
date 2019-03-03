@@ -53,7 +53,7 @@ R provides lots of tools to manipulate vectors. In this package, we will impleme
 
 The result suggest 100% test coverage:
 
-![alt text](test_coverage.PNG)
+![alt text](./img/test_coverage.PNG)
 
 ## Functions
 
@@ -69,7 +69,7 @@ The result suggest 100% test coverage:
 
 2. flatten_dataframe_prime(dataframe): There is no function that returns the prime numbers in a dataframe.
 
-3. find_prime(list): There is no function that find the largest prime within a list, but there is similar function in R environment, such as [isprime](https://www.rdocumentation.org/packages/gmp/versions/0.5-13.2/topics/isprime), that test if a number is a prime or not.
+3. find_prime(list): There is no function that find the largest prime for a given vector, but there is similar function in R environment, such as [isprime](https://www.rdocumentation.org/packages/gmp/versions/0.5-13.2/topics/isprime), that test if a number is a prime or not.
 
 ## Dependencies
 
