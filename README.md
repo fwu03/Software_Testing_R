@@ -11,21 +11,51 @@
 ## Versions
 | Document | Description |
 |-|-|
-| [Milestone 1](https://github.com/UBC-MDS/mlist_Python/tree/v1.0) | Project Proposal |
-| [Milestone 2](https://github.com/UBC-MDS/mlist_Python/tree/V2.0) | Milstone 2 |
-| [Milestone 3](../master/README.md) | Milstone 3 |
+| [Milestone 1](https://github.com/UBC-MDS/mlist_R/tree/v1.0) | Project Proposal |
+| [Milestone 3](https://github.com/UBC-MDS/mlist_R/tree/v2.0) | Milestone 3 |
 
 ## Package Overview
 
 R provides lots of tools to manipulate vectors. In this package, we will implement several vector manipulating functions, including `binary_search()`, `flatten_list_prime()`, and `find_prime()`.
 
-## Functions
+## Installation
 
-|ID|Function|Description|
-|--|--|--|
-|1|binary_search(x, list)|Search if the value `x` exists in the `list`, and return a list contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position indices in `list`|
-|2|flatten_dataframe_prime(dataframe)|This function takes an input dataframe of numbers and returns a vector that contains only the prime numbers in that dataframe.|
-|3|find_prime(list)| Return the largest prime number for a given list or vector.|
+1. Install `mlist` by using the R console command:
+
+```
+`devtools::install_github("UBC-MDS/mlist_R")`
+```
+
+2. Load the `mlist` library by using the R console command:
+
+```
+`library(mlist)`
+```
+## Testing Branch Coverage with `covr` package
+
+1. Install `covr` by using the R console command:
+
+```
+`install.packages("covr")`
+```
+
+2. Load the `covr` library by using the R console command:
+
+```
+`library(covr)`
+```
+
+3. Get branch coverage summary by using the R console command:
+
+```
+`report()`
+```
+
+The result suggest 100% test coverage:
+
+![alt text](test_coverage.PNG)
+
+## Functions
 
 |ID|Function|Description|Arguments|Example|
 |--|--|--|--|--|
