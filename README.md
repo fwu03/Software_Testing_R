@@ -11,7 +11,6 @@
 ## Versions
 | Document | Description |
 |-|-|
-
 | [Milestone 1](https://github.com/UBC-MDS/mlist_R/tree/v1.0) | Project Proposal |
 | [Milestone 3](https://github.com/UBC-MDS/mlist_R/tree/v2.0) | Milestone 3 |
 
@@ -57,12 +56,6 @@ The result suggest 100% test coverage:
 ![alt text](test_coverage.PNG)
 
 ## Functions
-
-|ID|Function|Description|
-|--|--|--|
-|1|binary_search(x, list)|Search if the value `x` exists in the `list`, and return a list contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position indices in `list`|
-|2|flatten_dataframe_prime(dataframe)|This function takes an input dataframe of numbers and returns a vector that contains only the prime numbers in that dataframe.|
-|3|find_prime(list)| Return the largest prime number for a given list or vector.|
 
 |ID|Function|Description|Arguments|Example|
 |--|--|--|--|--|
