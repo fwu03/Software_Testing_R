@@ -16,14 +16,43 @@ knitr::opts_chunk$set(
 )
 ```
 
-## Introduction
-`mlist` provides several functions to manipulate vectors and dataframes.
+## Package Overview
+R provides lots of tools to manipulate vectors. In this package, we will implement several vector manipulating functions, including binary_search(), flatten_list_prime(), and find_prime().
 
 ## binary_search()
 
+__Description__: Search if the value x exists in the lst, and return a vector contains: TRUE/FALSE depends on whether the x value has been found, x value, and x position indices in lst.
+
+__Input__: the number x to search for and the list the search in
+
+__Output__: a vector with the elements:
+1. TRUE/FALSE if x is in the list
+2. the x value
+3. the position of x in the list
+
+__Example__: binary_search(4, c(1,2,3,4,5,6))
+   > c('TRUE','4','4')
 
 ## flatten_dataframe_prime()
 
+__Description__: This function takes a dataframe of numbers and returns all the prime numbers in the dataframe.
+
+__Input__: a dataframe of numbers
+The numbers must be less than or equal to 1,000.
+
+__Output__: a vector of all the prime numbers in the dataframe
+The output vector is sorted ascendingly, and duplicate prime numbers are removed.
+
+__Example__:  flatten_dataframe_prime(data.frame(c(2, 3, 4), c(5, 6, 7), c(8, 9, 10)))
+ > c(2, 3, 5, 7)
 
 ## find_prime()
 
+__Description__: Return the largest prime number for a given list.
+
+__Input__: a vector of numerics
+
+__Output__: the largest prime number in the input vector
+
+__Example__:  find_prime(c(0,1,2,3,4,5))
+>5
