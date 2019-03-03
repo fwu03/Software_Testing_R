@@ -1,0 +1,29 @@
+---
+title: "mlist"
+author: "Bailey Lei, Daniel Lin, Fan Wu"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mlist}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introduction
+`mlist` provides several functions to manipulate vectors and dataframes.
+
+## binary_search()
+
+
+## flatten_dataframe_prime()
+
+
+## find_prime()
+
