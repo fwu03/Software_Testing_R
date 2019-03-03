@@ -21,17 +21,21 @@ R provides lots of tools to manipulate vectors. In this package, we will impleme
 
 ## Installation
 
-1. Install `mlist` by using the R console command:
+Install `mlist` by using the R console command:
 
 ```
 devtools::install_github("UBC-MDS/mlist_R")
 ```
+## Usage
 
-2. Load the `mlist` library by using the R console command:
+To load the `mlist` library by using the R console command:
 
 ```
 library(mlist)
 ```
+
+After loading the mlist package, you can call the functions.
+
 ## Testing Branch Coverage with `covr` package
 
 1. Install `covr` by using the R console command:
