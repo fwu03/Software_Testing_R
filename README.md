@@ -11,13 +11,51 @@
 ## Versions
 | Document | Description |
 |-|-|
-| [Milestone 1](../master/README.md) | Project Proposal |
+| [Milestone 1](https://github.com/UBC-MDS/mlist_R/releases/tag/v1.0) | Project Proposal |
+| [Milestone 3](https://github.com/UBC-MDS/mlist_R/releases/tag/v2.0) | Milestone 3 |
 
 ## Package Overview
 
 This project provides several tools to manipulate lists in R.  
 For example, a user search through a list for a certain kind of item
 The repository includes the following functions:
+
+## Installation
+
+1. Install `mlist` by using the R console command:
+
+```
+`devtools::install_github("UBC-MDS/mlist_R")`
+```
+
+2. Load the `mlist` library by using the R console command:
+
+```
+`library(mlist)`
+```
+## Testing Branch Coverage with `covr` package
+
+1. Install `covr` by using the R console command:
+
+```
+`install.packages("covr")`
+```
+
+2. Load the `covr` library by using the R console command:
+
+```
+`library(covr)`
+```
+
+3. Get branch coverage summary by using the R console command:
+
+```
+`report()`
+```
+
+The result suggest 100% test coverage:
+
+![alt text](test_coverage.PNG)
 
 ## Functions
 

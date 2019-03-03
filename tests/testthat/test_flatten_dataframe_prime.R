@@ -41,13 +41,14 @@ test_that('test values of elements within inputs to be less than 1000',{
 # test large/small values
 test_that("test extreme numeric values",{
   extreme_df <- data.frame(c(-10000), c(0), c(1), c(-28359.34))
-  
+  big_vals_df <- data.frame(c(91837.01, 31642), c(18747756, 19498.8287))
   expect_equal(flatten_dataframe_prime(extreme_df), c())
+  expect_error(flatten_dataframe_prime(big_vals_df))
 })
 
 # test empty dataframe
 test_that("test empty dataframe", {
   empty_df <- data.frame()
-  
+
   expect_error(flatten_dataframe_prime(empty_df))
 })
