@@ -1,4 +1,4 @@
-<img src="./img/logo.png" align="right" height="265" width="428"/>
+<img src="./img/logo.png" align="right" height="275" width="200"/>
 
 ## Contributors
 
