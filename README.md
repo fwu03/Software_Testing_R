@@ -1,4 +1,4 @@
-# mlist
+<img src="./img/logo.png" align="right" height="265" width="428"/>
 
 ## Contributors
 
@@ -23,32 +23,32 @@ R provides lots of tools to manipulate vectors. In this package, we will impleme
 1. Install `mlist` by using the R console command:
 
 ```
-`devtools::install_github("UBC-MDS/mlist_R")`
+devtools::install_github("UBC-MDS/mlist_R")
 ```
 
 2. Load the `mlist` library by using the R console command:
 
 ```
-`library(mlist)`
+library(mlist)
 ```
 ## Testing Branch Coverage with `covr` package
 
 1. Install `covr` by using the R console command:
 
 ```
-`install.packages("covr")`
+install.packages("covr")
 ```
 
 2. Load the `covr` library by using the R console command:
 
 ```
-`library(covr)`
+library(covr)
 ```
 
 3. Get branch coverage summary by using the R console command:
 
 ```
-`report()`
+report()
 ```
 
 The result suggest 100% test coverage:
