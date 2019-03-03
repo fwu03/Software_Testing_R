@@ -1,4 +1,3 @@
-<img src="./img/logo.png" align="right" height="275" width="200"/>
 
 ## Contributors
 
@@ -7,6 +6,8 @@
 |Bailey Lei (baileyle)|[blei7](https://github.com/blei7)|
 |Daniel Lin (dglin)|[danielglin](https://github.com/danielglin)|
 |Fan Wu (fwu03)|[fwu03](https://github.com/fwu03)|
+
+<img src="./img/logo.png" align="right" height="275" width="200"/>
 
 ## Versions
 | Document | Description |
