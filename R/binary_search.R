@@ -15,10 +15,10 @@ binary_search <- function(x, lst){
   #' @examples
   #'
   #' binary_search(4, c(1,2,3,4,5,6))
-  #' > c('TRUE','4','4')
+  #' # c('TRUE','4','4')
   #'
   #' binary_search(5, c(10,100,200,300))
-  #' > c('FALSE','5','0')
+  #' # c('FALSE','5','0')
 
   # Raise error if input x is not integer
   if (!is.numeric(x)){
