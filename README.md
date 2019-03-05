@@ -1,4 +1,3 @@
-<img src="./img/logo.png" align="right" height="275" width="200"/>
 
 ## Contributors
 
@@ -13,6 +12,8 @@
 |-|-|
 | [Milestone 1](https://github.com/UBC-MDS/mlist_R/tree/v1.0) | Project Proposal |
 | [Milestone 3](https://github.com/UBC-MDS/mlist_R/tree/v2.0) | Milestone 3 |
+
+<img src="./img/logo.png" align="right" height="265" width="428"/>
 
 ## Package Overview
 

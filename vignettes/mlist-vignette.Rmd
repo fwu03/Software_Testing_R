@@ -26,6 +26,7 @@ __Description__: Search if the value x exists in the lst, and return a vector co
 __Input__: the number x to search for and the list the search in
 
 __Output__: a vector with the elements:
+
 1. TRUE/FALSE if x is in the list
 2. the x value
 3. the position of x in the list
