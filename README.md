@@ -64,7 +64,7 @@ The result suggest 100% test coverage:
 
 |ID|Function|Description|Arguments|Example|
 |--|--|--|--|--|
-|1|binary_search(x, lst)|Search if the value `x` exists in the `lst`, and return a vector contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position indices in `lst`.|x: numeric, lst: sorted vector of numerics|binary_search(4, c(1,2,3,4,5,6))|
+|1|binary_search(x, lst)|Search if the value `x` exists in the `lst`, and return a vector contains: `TRUE/FALSE` depends on whether the `x` value has been found, `x` value, and `x` position index in `lst`.|x: numeric, lst: sorted vector of numerics|binary_search(4, c(1,2,3,4,5,6))|
 |2|flatten_dataframe_prime(dataframe)|This function takes a dataframe contains multiple vectors and returns a flat vector that contains only prime numbers.|dataframe: a dataframe contains multiple vectors of numerics|flatten_dataframe_prime(data.frame(c(2, 3, 4), c(5, 6, 7), c(8, 9, 10)))|
 |3|find_prime(x)| Return the largest prime number for a given list.|x : a vector of numerics|find_prime(c(0,1,2,3,4,5))|
 
