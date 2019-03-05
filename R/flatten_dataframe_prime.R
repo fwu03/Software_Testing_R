@@ -7,7 +7,8 @@
 #' @export
 #' @examples
 #' a <- data.frame(c(2, 3, 4), c(5, 6, 7), c(8, 9, 10))
-#' flatten_dataframe_prime(a) returns the numeric vector c(2, 3, 5, 7)
+#' flatten_dataframe_prime(a)
+#' # returns the numeric vector c(2, 3, 5, 7)
 #' 
 flatten_dataframe_prime <- function(df) {
   LIMIT <- 1000
