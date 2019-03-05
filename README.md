@@ -60,6 +60,8 @@ The result suggest 100% test coverage:
 
 ![alt text](./img/test_coverage.PNG)
 
+## Travis: Continuous Integration Testing
+
 ## Functions
 
 |ID|Function|Description|Arguments|Example|
