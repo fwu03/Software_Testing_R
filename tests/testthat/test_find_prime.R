@@ -10,20 +10,15 @@ test_that("List has no prime number", {
 })
 
 test_that("List is empty", {
-  expect_equal(find_prime(list(1, 4, 5)), "Input type must be a vector of numeric value")
+  expect_error(find_prime(list(1, 4, 5)))
 })
 
 test_that("List is empty", {
-  expect_equal(find_prime(c()), "No prime number in vector")
-})
-
-test_that("Input is not a list", {
-  expect_equal(find_prime(17.1), "No prime number in vector")
+  expect_error(find_prime(c()))
 })
 
 test_that("vector with only integers", {
-  expect_equal(find_prime(c(100.19, 999.1938, -1988274783.282, 37572.18)),
-  "Input values exceed 1000. Please limit range of input values to less than 1000.")
+  expect_error(find_prime(c(100.19, 999.1938, -1988274783.282, 37572.18)))
 })
 
 test_that("List only has the same prime number multiple times", {
