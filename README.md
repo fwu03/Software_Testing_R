@@ -24,7 +24,7 @@ R provides lots of tools to manipulate vectors. In this package, we will impleme
 Install `mlist` by using the R console command:
 
 ```
-devtools::install_github("UBC-MDS/mlist_R")
+devtools::install_github("UBC-MDS/mlist_R", build_opts = c("--no-resave-data", "--no-manual"))
 ```
 ## Usage
 
