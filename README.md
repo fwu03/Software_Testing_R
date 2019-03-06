@@ -61,6 +61,7 @@ The result suggest 100% test coverage:
 ![alt text](./img/test_coverage.PNG)
 
 ## Travis: Continuous Integration Testing
+[![Build Status](https://travis-ci.org/UBC-MDS/mlist_R.svg?branch=master)](https://travis-ci.org/UBC-MDS/mlist_R)
 
 ## Functions
 
