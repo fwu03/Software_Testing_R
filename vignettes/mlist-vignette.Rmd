@@ -17,13 +17,21 @@ knitr::opts_chunk$set(
 ```
 
 ## Package Overview
-R provides lots of tools to manipulate vectors. In this package, we will implement several vector manipulating functions, including binary_search(), flatten_list_prime(), and find_prime().
+R provides lots of tools to manipulate vectors. In this package, we will implement several vector manipulating functions, including binary_search(), flatten_dataframe_prime(), and find_prime().  The first function searches an input vector for a specified element.  The other two functions deal with looking for prime numbers: `flatten_dataframe_prime()` returns a vector of the prime numbers in a dataframe, and `find_prime()` returns the largest prime number in a vector.
 
 ## binary_search()
 
 __Description__: Search if the value x exists in the lst, and return a vector contains: TRUE/FALSE depends on whether the x value has been found, x value, and x position indices in lst.
 
 __Input__: the number x to search for and the list the search in
+
+An error will be thrown in the following cases:
+
+- the input x is not numeric
+- the input list (lst) is not numeric
+- the input x is greater than 1,000
+- the input list (lst) contains a number greater than 1,000
+- the input list (lst) is not sorted
 
 __Output__: a vector with the elements:
 
@@ -32,6 +40,7 @@ __Output__: a vector with the elements:
 3. the position of x in the list
 
 __Example__: binary_search(4, c(1,2,3,4,5,6))
+
    > c('TRUE','4','4')
 
 ## flatten_dataframe_prime()
@@ -40,6 +49,12 @@ __Description__: This function takes a dataframe of numbers and returns all the 
 
 __Input__: a dataframe of numbers
 The numbers must be less than or equal to 1,000.
+
+An error will be thrown in the following cases:
+
+- the input is not a dataframe
+- there is a non-numeric element in the dataframe
+- there is a number greater than 1,000
 
 __Output__: a vector of all the prime numbers in the dataframe
 The output vector is sorted ascendingly, and duplicate prime numbers are removed.
@@ -52,6 +67,12 @@ __Example__:  flatten_dataframe_prime(data.frame(c(2, 3, 4), c(5, 6, 7), c(8, 9,
 __Description__: Return the largest prime number for a given list.
 
 __Input__: a vector of numerics
+
+An error will be thrown in the following cases:
+
+- the vector has a length of zero
+- the vector is not numeric
+- the vector includes a number greater than 1,000
 
 __Output__: the largest prime number in the input vector
 
