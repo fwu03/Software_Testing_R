@@ -2,9 +2,7 @@
 % Please edit documentation in R/binary_search.R
 \name{binary_search}
 \alias{binary_search}
-\title{Usage: The function applies the generic binary search algorithm to search if the value
-x exists in the lst, and returns a vector contains: TRUE/FAlSE depends on whether the x value has been found,
-x value, and x position indice in lst}
+\title{Binary Search}
 \usage{
 binary_search(x, lst)
 }
@@ -14,21 +12,18 @@ binary_search(x, lst)
 \item{lst}{: sorted vector of numerics}
 }
 \value{
-a list:
-           - first character represents a logical value (TRUE/FALSE)
-            - second character represents a numeric value of x
-            - third character represents a numeric in range of 1 to length(lst) where NA indicates the element is not in the list
+a list: First character represents a logical value (TRUE/FALSE). Second character represents a numeric value of x. Third character represents a numeric in range of 1 to length(lst) where NA indicates the element is not in the list
 }
 \description{
-Usage: The function applies the generic binary search algorithm to search if the value
+The function applies the generic binary search algorithm to search if the value
 x exists in the lst, and returns a vector contains: TRUE/FAlSE depends on whether the x value has been found,
 x value, and x position indice in lst
 }
 \examples{
 
 binary_search(4, c(1,2,3,4,5,6))
-> c('TRUE','4','4')
+c('TRUE','4','4')
 
 binary_search(5, c(10,100,200,300))
-> c('FALSE','5','0')
+c('FALSE','5','0')
 }
