@@ -1,7 +1,7 @@
 binary_search <- function(x, lst){
   #' Usage: The function applies the generic binary search algorithm to search if the value
   #' x exists in the lst, and returns a vector contains: TRUE/FAlSE depends on whether the x value has been found,
-  #' x value, and x position indice in lst
+  #' x value, and x position index in lst
   #'
   #' @param x : numeric value less than 1000.
   #' @param lst : sorted vector of numerics
