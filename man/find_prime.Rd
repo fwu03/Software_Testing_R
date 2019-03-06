@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_prime.R
 \name{find_prime}
 \alias{find_prime}
-\title{Usage: Find largest prime numbers within a vector of integers.}
+\title{Find Prime}
 \usage{
 find_prime(x)
 }
@@ -13,15 +13,13 @@ find_prime(x)
 an integer
 }
 \description{
-Usage: Find largest prime numbers within a vector of integers.
+Find largest prime numbers within a vector of integers.
 }
 \examples{
 find_prime(c(0,1,2,3,4,5))
->5
+5
 
 find_prime(c(0,1))
-> "No prime number in vector"
+"No prime number in vector"
 
-find_prime(c("hello", 1, 5))
-> "Exception error: input vector must contains only integers"
 }
