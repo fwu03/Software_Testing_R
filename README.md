@@ -1,3 +1,5 @@
+[![Travis build status](https://travis-ci.org/UBC-MDS/mlist_R.svg?branch=master)](https://travis-ci.org/UBC-MDS/mlist_R)
+
 
 ## Contributors
 
