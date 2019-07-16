@@ -2,4 +2,4 @@
 
 export(binary_search)
 export(find_prime)
-export(flatten_list_prime)
+export(flatten_dataframe_prime)
